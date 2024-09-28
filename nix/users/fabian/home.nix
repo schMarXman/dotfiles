@@ -24,6 +24,7 @@
     keepassxc
     kitty
     lazygit
+    cmake
 
     # Gnome extensions
     gnomeExtensions.appindicator
@@ -57,6 +58,8 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    ".config/nvim/init.lua".source = ../../../nvim/init.lua;
+    ".config/nvim/lazy-lock.json".source = ../../../nvim/lazy-lock.json;
   };
 
   # Home Manager can also manage your environment variables through
