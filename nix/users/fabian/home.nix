@@ -121,7 +121,7 @@
   programs.git = {
       enable = true;
       userEmail = "asdf@test.com";
-      userName = "fabian";
+      userName = "schMarXman";
   };
 
   # Let Home Manager install and manage itself.
