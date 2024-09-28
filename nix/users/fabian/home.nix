@@ -83,6 +83,13 @@
     SUDO_EDITOR = "nvim";
   };
 
+  home.shellAliases = {
+    hms = "home-manager switch --flake ~/Projects/dotfiles/nix";
+    "nos switch" = "sudo nixos-rebuild switch --flake ~/Projects/dotfiles/nix";
+    "nos boot" = "sudo nixos-rebuild boot --flake ~/Projects/dotfiles/nix";
+    lg = "lazygit";
+  };
+
   # Gnome settings
   dconf.settings = {
 	  # Window buttons
