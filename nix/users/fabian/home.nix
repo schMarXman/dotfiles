@@ -26,6 +26,7 @@
     lazygit
     cmake
     zoxide
+    fzf
 
     # Gnome extensions
     gnomeExtensions.appindicator
