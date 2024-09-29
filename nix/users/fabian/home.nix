@@ -93,18 +93,16 @@
 
   # Gnome settings
   dconf.settings = {
-	  # Window buttons
-	  "org/gnome/desktop/wm/preferences" = {
-		  button-layout = "appmenu:minimize,close";
-	  };
+    # Window buttons
+    "org/gnome/desktop/wm/preferences" = {
+      button-layout = "appmenu:minimize,close";
+    };
 
-	  # Keybindings
-	  "org/gnome/desktop/wm/keybindings" = {
-		  minimize = ["<Super>x"];
-	  };
+    # Keybindings
+    "org/gnome/desktop/wm/keybindings" = {
+      minimize = ["<Super>x"];
+    };
   
-
-
     "org/gnome/shell" = {
       disable-user-extensions = false;
       enabled-extensions = [
