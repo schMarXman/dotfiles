@@ -25,11 +25,13 @@
     kitty
     lazygit
     cmake
+    zoxide
 
     # Gnome extensions
     gnomeExtensions.appindicator
     gnomeExtensions.dash-to-dock
     gnomeExtensions.forge
+    gnomeExtensions.tailscale-status
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -85,8 +87,7 @@
 
   home.shellAliases = {
     hms = "home-manager switch --flake ~/Projects/dotfiles/nix";
-    "nos switch" = "sudo nixos-rebuild switch --flake ~/Projects/dotfiles/nix";
-    "nos boot" = "sudo nixos-rebuild boot --flake ~/Projects/dotfiles/nix";
+    nos = "sudo nixos-rebuild --flake ~/Projects/dotfiles/nix";
     lg = "lazygit";
   };
 
@@ -110,6 +111,7 @@
         "appindicatorsupport@rgcjonas.gmail.com"
         "dash-to-dock@micxgx.gmail.com"
         "forge@jmmaranan.com"
+	"tailscale-status@maxgallup.github.com"
       ];
     };
   };
