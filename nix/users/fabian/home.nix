@@ -25,7 +25,6 @@
     kitty
     lazygit
     cmake
-    zoxide
     fzf
 
     # Gnome extensions
@@ -117,14 +116,20 @@
     };
   };
 
-  programs.librewolf.enable = true;
-  programs.neovim.enable = true;
-  programs.bash.enable = true;
-
-  programs.git = {
+  programs = {
+    librewolf.enable = true;
+    neovim.enable = true;
+    bash.enable = true;
+    git = {
       enable = true;
       userEmail = "asdf@test.com";
       userName = "schMarXman";
+
+    };
+    zoxide = {
+      enable = true;
+      options = [ "--cmd cd" ];
+    };
   };
 
   # Let Home Manager install and manage itself.
