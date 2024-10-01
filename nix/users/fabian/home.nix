@@ -1,6 +1,8 @@
 { pkgs, ... }:
 
 {
+  gnome.enable = true;
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "fabian";
@@ -26,12 +28,6 @@
     lazygit
     cmake
     fzf
-
-    # Gnome extensions
-    gnomeExtensions.appindicator
-    gnomeExtensions.dash-to-dock
-    gnomeExtensions.forge
-    gnomeExtensions.tailscale-status
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -86,7 +82,7 @@
   };
 
   home.shellAliases = {
-    hms = "home-manager switch --flake ~/Projects/dotfiles/nix";
+    hm = "home-manager --flake ~/Projects/dotfiles/nix";
     nos = "sudo nixos-rebuild --flake ~/Projects/dotfiles/nix";
     lg = "lazygit";
   };
