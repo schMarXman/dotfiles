@@ -87,6 +87,7 @@
     nos = "sudo nixos-rebuild --flake ~/Projects/dotfiles/nix";
     lg = "lazygit";
     v = "nvim";
+    sudo = "sudo ";
   };
 
   programs = {
