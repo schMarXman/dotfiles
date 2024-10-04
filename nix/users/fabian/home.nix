@@ -86,6 +86,7 @@
     hm = "home-manager --flake ~/Projects/dotfiles/nix";
     nos = "sudo nixos-rebuild --flake ~/Projects/dotfiles/nix";
     lg = "lazygit";
+    v = "nvim";
   };
 
   programs = {
