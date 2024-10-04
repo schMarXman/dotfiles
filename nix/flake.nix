@@ -28,7 +28,7 @@
       modules = [
         ./hosts/T495s/configuration.nix
 	nixos-hardware.nixosModules.lenovo-thinkpad-t495
-      ] /* ++ ylib.umport { paths = [ ./nixosModules ]; } */;
+      ] ++ ylib.umport { paths = [ ./nixosModules ]; };
     };
     homeConfigurations."fabian" = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
