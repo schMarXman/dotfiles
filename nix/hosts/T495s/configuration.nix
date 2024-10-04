@@ -101,7 +101,7 @@
   programs = {
     firefox.enable = true;
     steam.enable = true;
-    hyprland.enable = true;
+    # hyprland.enable = true;
   };
 
   # Allow unfree packages
