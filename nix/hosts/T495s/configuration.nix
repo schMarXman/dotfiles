@@ -114,6 +114,7 @@
     wget
     vim
     git
+    xclip
   ];
 
   services.tailscale.enable = true;
