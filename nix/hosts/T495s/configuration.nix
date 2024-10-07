@@ -119,6 +119,12 @@
 
   services.tailscale.enable = true;
 
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = [
+    # nvim nim lsp deps e.g.
+    pkgs.pcre
+  ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
