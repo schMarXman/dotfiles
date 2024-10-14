@@ -76,6 +76,9 @@ require('lazy').setup({
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
 
+  -- floating terminal
+  'voldikss/vim-floaterm',
+
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
@@ -717,6 +720,8 @@ dap.configurations.cs = {
 
 -- Map Esc
 vim.keymap.set('i', 'jj', '<Esc>')
+-- Escape to exit terminal mode
+vim.keymap.set('t','<Esc>', '<C-\\><C-n>')
 
 vim.cmd.colorscheme(theme)
 
