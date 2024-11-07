@@ -88,6 +88,8 @@
     lg = "lazygit";
     v = "nvim";
     sudo = "sudo ";
+    gc = "home-manager expire-generations \"-14 days\" && sudo nix-collect-garbage --delete-older-than 14d";
+    nos-update = "nix flake update ~/Projects/dotfiles/nix";
   };
 
   programs = {
