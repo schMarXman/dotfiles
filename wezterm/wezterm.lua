@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 
--- config.xcursor_theme = "Yaru"
+config.font = wezterm.font 'JetBrains Mono'
 config.front_end = 'WebGpu'
 
 -- gnome cursor fixes: https://github.com/wez/wezterm/issues/1742
