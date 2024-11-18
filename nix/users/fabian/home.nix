@@ -29,6 +29,7 @@
     cmake
     fzf
     mpv
+    brave
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -89,7 +90,7 @@
     v = "nvim";
     sudo = "sudo ";
     gc = "home-manager expire-generations \"-14 days\" && sudo nix-collect-garbage --delete-older-than 14d";
-    nos-update = "nix flake update ~/Projects/dotfiles/nix";
+    nos-update = "nix flake update --flake ~/Projects/dotfiles/nix/flake.nix";
   };
 
   programs = {
