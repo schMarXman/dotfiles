@@ -37,10 +37,10 @@
                 disable-user-extensions = false;
                 enabled-extensions = [
                     "appindicatorsupport@rgcjonas.gmail.com"
-                        "dash-to-dock@micxgx.gmail.com"
-                        "forge@jmmaranan.com"
-                        "tailscale-status@maxgallup.github.com"
-                        "caffeine@patapon.info"
+                    "dash-to-dock@micxgx.gmail.com"
+                    "forge@jmmaranan.com"
+                    "tailscale-status@maxgallup.github.com"
+                    "caffeine@patapon.info"
                 ];
             };
         };
