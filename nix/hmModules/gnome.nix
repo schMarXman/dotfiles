@@ -31,6 +31,28 @@
             # Keybindings
             "org/gnome/desktop/wm/keybindings" = {
                 minimize = ["<Super>x"];
+                switch-to-workspace-left = ["<Alt><Super>h"];
+                switch-to-workspace-right = ["<Alt><Super>l"];
+            };
+            "org/gnome/desktop/wm/keybindings/" = {
+            };
+            # Define new custom keybindings
+            "org/gnome/settings-daemon/plugins/media-keys" = {
+                custom-keybindings = [
+                    "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+                    "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
+                ];
+            };
+            # Set custom keybinding values
+            "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+                name = "Nautilus";
+                command = "nautilus";
+                binding = "<Super>e";
+            };
+            "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+                name = "Terminal";
+                command = "kgx";
+                binding = "<Super>t";
             };
 
             "org/gnome/shell" = {
