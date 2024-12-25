@@ -90,7 +90,7 @@
     v = "nvim";
     sudo = "sudo ";
     gc = "home-manager expire-generations \"-14 days\" && sudo nix-collect-garbage --delete-older-than 14d";
-    nos-update = "nix flake update --flake ~/Projects/dotfiles/nix/flake.nix";
+    nos-update = "nix flake update --flake ~/Projects/dotfiles/nix/";
   };
 
   programs = {
