@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:nixos/nixos-hardware";
+    ghostty.url = "github:ghostty-org/ghostty";
 
     nypkgs = { 
       url = "github:yunfachi/nypkgs";
@@ -24,7 +25,7 @@
   in
   {
     nixosConfigurations.T495s = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
+      specialArgs = { inherit inputs; };
       modules = [
         ./hosts/T495s/configuration.nix
 	nixos-hardware.nixosModules.lenovo-thinkpad-t495
@@ -32,6 +33,7 @@
     };
     homeConfigurations."fabian" = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
+      extraSpecialArgs = { inherit inputs; };
       modules = [ 
 	./users/fabian/home.nix
       ] ++ ylib.umport { paths = [ ./hmModules ]; };

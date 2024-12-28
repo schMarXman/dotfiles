@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   gnome.enable = true;
@@ -30,6 +30,7 @@
     fzf
     mpv
     brave
+    inputs.ghostty.packages.${system}.default
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
