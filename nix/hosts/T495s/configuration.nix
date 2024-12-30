@@ -11,6 +11,7 @@
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.trusted-users = [ "fabian" ];
 
   # Laptop lid
   services.logind.lidSwitch = "ignore";

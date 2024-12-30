@@ -1,0 +1,7 @@
+theme = catppuccin-mocha
+
+keybind = f11=toggle_fullscreen
+keybind = f12=toggle_window_decorations
+keybind = f10=toggle_quick_terminal
+
+quick-terminal-position = top
