@@ -1,7 +1,8 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   gnome.enable = true;
+  ghostty.enable = true;
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -30,7 +31,7 @@
     fzf
     mpv
     brave
-    inputs.ghostty.packages.${system}.default
+    btop
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
