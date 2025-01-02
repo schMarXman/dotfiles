@@ -51,7 +51,7 @@
             };
             "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
                 name = "Terminal";
-                command = "kgx";
+                command = "ghostty";
                 binding = "<Super>t";
             };
 

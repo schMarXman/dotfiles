@@ -4,7 +4,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:nixos/nixos-hardware";
-    ghostty.url = "github:ghostty-org/ghostty";
 
     nypkgs = { 
       url = "github:yunfachi/nypkgs";

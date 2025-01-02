@@ -1,30 +1,18 @@
-{ config, pkgs, lib, inputs, ... }: 
+{ config, pkgs, lib, ... }: 
 
 {
     options = {
-        ghostty.enable = lib.mkEnableOption "Enables Ghostty terminal and settings";
+        ghostty.enable = lib.mkEnableOption "Enables Ghostty terminal and config";
     };
 
     config = lib.mkIf config.ghostty.enable {
         home = {
             packages = with pkgs; [
-                inputs.ghostty.packages.${system}.default
+                ghostty
             ];
 
             file = {
                 ".config/ghostty/config".source = ../../ghostty/config;
-            };
-        };
-
-        nix = {
-            package = pkgs.nix;
-            settings = {
-                extra-substituters = [
-                    "https://ghostty.cachix.org"
-                ];
-                extra-trusted-public-keys = [
-                    "ghostty.cachix.org-1:qb389yta6gtyneehvqg58y0wnhjqoqgna+wbnpwwxns="
-                ];
             };
         };
     };
