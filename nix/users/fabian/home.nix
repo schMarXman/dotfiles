@@ -25,7 +25,6 @@
     # # "Hello, world!" when run.
     telegram-desktop
     keepassxc
-    kitty
     lazygit
     cmake
     fzf
@@ -111,8 +110,6 @@
     };
   };
 
-  programs.wezterm.enable = true;
-  programs.wezterm.extraConfig = builtins.readFile ../../../wezterm/wezterm.lua;
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
