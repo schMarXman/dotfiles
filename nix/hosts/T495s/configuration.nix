@@ -70,7 +70,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -119,12 +119,15 @@
   ];
 
   services.tailscale.enable = true;
+  services.mullvad-vpn.enable = true;
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = [
     # nvim nim lsp deps e.g.
     pkgs.pcre
   ];
+
+  zsa.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

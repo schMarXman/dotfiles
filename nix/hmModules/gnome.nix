@@ -46,8 +46,13 @@
             # Keybindings
             "org/gnome/desktop/wm/keybindings" = {
                 minimize = ["<Super>x"];
-                switch-to-workspace-left = ["<Alt><Super>h"];
-                switch-to-workspace-right = ["<Alt><Super>l"];
+                switch-to-workspace-left = ["<Alt><Super>j"];
+                switch-to-workspace-right = ["<Alt><Super>k"];
+            };
+
+            # Lock PC
+            "org/gnome/settings-daemon/plugins/media-keys" = {
+                screensaver = ["<Super>q"];
             };
             "org/gnome/desktop/wm/keybindings/" = {
             };
