@@ -17,6 +17,7 @@
             gnomeExtensions.transparent-top-bar-adjustable-transparency
             gnomeExtensions.media-controls
             gnomeExtensions.pano
+            gnomeExtensions.executor
         ];
 
         # Forge extension config
@@ -88,6 +89,7 @@
                     "mediacontrols@cliffniff.github.com"
                     "gsconnect@andyholmes.github.io"
                     "pano@elhan.io"
+                    "executor@raujonas.github.io"
                 ];
                 # Dock pinned apps
                 favorite-apps = [
@@ -121,6 +123,12 @@
             "org/gnome/shell/extensions/pano" = {
                 play-audio-on-copy = false;
                 send-notification-on-copy = false;
+            };
+            "org/gnome/shell/extensions/executor" = {
+                left-active = false;
+                center-active = false;
+                right-index = 9;
+                right-commands-json = "{\"commands\":[{\"isActive\":true,\"command\":\"echo \\\"💾 $(df -h --output=pcent /dev/dm-0 | tail -n 1 | tr -d '%' | xargs)%\\\"\",\"interval\":180,\"uuid\":\"3dad473c-04c5-4a69-8bea-a44f75231988\"}]}";
             };
         };
     };
