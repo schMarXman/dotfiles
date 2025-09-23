@@ -131,5 +131,13 @@
                 right-commands-json = "{\"commands\":[{\"isActive\":true,\"command\":\"echo \\\"💾 $(df -h --output=pcent /dev/dm-0 | tail -n 1 | tr -d '%' | xargs)%\\\"\",\"interval\":180,\"uuid\":\"3dad473c-04c5-4a69-8bea-a44f75231988\"}]}";
             };
         };
+
+        gtk = {
+            enable = true;
+            iconTheme = {
+                name = "Tela-circle-dark";
+                package = pkgs.tela-circle-icon-theme;
+            };
+        };
     };
 }
