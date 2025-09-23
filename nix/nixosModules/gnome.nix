@@ -6,6 +6,9 @@
     };
 
     config = lib.mkIf config.gnome.enable {
+        services.displayManager.gdm.enable = true;
+        services.desktopManager.gnome.enable = true;
+
         environment.gnome.excludePackages = with pkgs; [
             epiphany
             gnome-music
