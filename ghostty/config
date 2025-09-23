@@ -1,4 +1,4 @@
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 
 keybind = f11=toggle_fullscreen
 keybind = f12=toggle_window_decorations
